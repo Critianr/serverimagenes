@@ -25,6 +25,7 @@ app.use(multer({
     storage,
     dest: path.join(__dirname, 'public/uploads')
 }).single('image'))
+
 app.get('/', (req, res)=>{
     res.render('index')
 })
